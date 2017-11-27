@@ -1,0 +1,138 @@
+/*
+Resetear el navegador
+*/
+
+* {
+	box-sizing: border-box;
+	margin:0; /* saca el margen de arriba y hacia abajo y queda al medio */
+	padding:0;
+}
+
+body {
+	font-family: 'Catamaran', sans-serif;
+	color: #FFF;
+	text-align: center;
+  background-color: #F78E69;
+}
+
+/*
+Crear container
+*/
+.container {
+	width: 100%;
+	margin: 0 auto; /* queda centrado */
+}
+
+.row:before, .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* después de cada row, hay un borde inferior. No funciona con panda-4 WHY */
+.row:after {
+  border-bottom: 25px solid #F78E69;
+}
+
+/* estilo header, ocupa el tamaño de 11 columnas */
+.header {
+	width: 91%;
+	text-align: right;
+}
+
+.header h1 {
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 1.25rem;
+  font-weight: 100;
+}
+
+/* todos los demás divs tienen un ancho de 100% */
+.panda-1, .panda-2, .panda-3, .panda-4, .panda-5, .panda-6 {
+	width: 100%;
+}
+
+/* estilos imagen panda-1 */
+.panda-1 img {
+	filter: grayscale(100%);
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+
+.inner {
+  margin: 0;
+  background-color: #ABE188;
+  width: 100%;
+  height: auto;
+  padding: 1px 0px;
+}
+
+/* estilos div de texto, fondo distinto. Detalles de tamaño de tipografía abajo */
+.about {
+	width: 50%;
+	background-color: #F78E69;
+	margin: 50px auto;
+  padding: 20px;
+}
+
+.about h3 {
+  font-size: 1.625em;
+  padding: 10px 0px;
+}
+
+.about p {
+  font-size: 1.250em;
+  font-weight: 100;
+  line-height: 25px;
+}
+
+/* estilos imagen panda-3 */
+.panda-3 img {
+  filter: grayscale(100%);
+  width: 100%;
+  height: 510px;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+/* estilo de lista desordenada. Se muestra horizontalmente */
+.pandaphotos {
+  list-style: none;
+  display: inline-flex;
+}
+
+/* estilos panda-4. Detalles de tipografía abajo */
+.panda-4 {
+  background-color: #ABE188;
+}
+
+.panda-4 h2 {
+  font-size: 3.125em;
+  padding: 20px 0px;
+}
+
+/* estilos de las cuatro imágenes de la lista, con borde blando cada una */
+.pandaphotos li img {
+  border: 10px solid #FFF;
+  margin: 20px;
+}
+
+/* estulos imagen panda-5 */
+.panda-5 img {
+  filter: grayscale(100%);
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  object-position: 50% 0%;
+}
+
+/* estilos footer */
+.panda-6 {
+  text-align: right;
+  padding: 0px 40px;
+}
